@@ -15,10 +15,26 @@ public class Somatorio {
 		
 		double resultado = 0.0;
 		
-		//Implementar
+		
+		if (valores == null)
+		{
+			resultado = Double.NaN;
+		}
+		
+	else {			
+		
+			for (int i = 0; i <= valores.length -1; i++)
+			{
+				
+			resultado = resultado + valores[i];
+							
+	        }
+			
+		}
 		
 		return resultado;
-	}
+	
+}
 	
 	public static Somatorio getInstancia() {
 		
